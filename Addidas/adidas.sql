@@ -36,3 +36,10 @@ SELECT TOP 5[Product] ,sum([Total Sales]) As Total_Sales
   FROM [Adidas sales Report].[dbo].['Working Sheet$']
   GROUP BY Product
   ORDER BY Total_Sales DESC;
+
+  /****** Whats are the Top 5 Products with the highest Profit margins  ******/
+  SELECT TOP 5[Product] ,sum([Operating Profit]) As Total_Operating_Profits
+      
+  FROM [Adidas sales Report].[dbo].['Working Sheet$']
+  GROUP BY Product
+  ORDER BY Total_Operating_Profits DESC;
