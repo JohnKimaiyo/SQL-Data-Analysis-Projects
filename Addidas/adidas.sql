@@ -2,7 +2,9 @@
 SELECT MAX ([Total Sales]) AS Highest_Sales_amount
   FROM [Adidas sales Report].[dbo].['Working Sheet$']
 
-
+/****** Whats is  the Average  sales  amount   ******/
+SELECT AVG ([Total Sales]) AS Average_Sales_amount
+  FROM [Adidas sales Report].[dbo].['Working Sheet$']
 
 
 
