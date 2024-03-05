@@ -13,8 +13,6 @@ SELECT TOP 5[Region] ,sum([Total Sales]) As Total_Sales
   GROUP BY Region
   ORDER BY Total_Sales DESC;
 
-
-
 /****** Whats are the Top 5 States with the highest sales  ******/
 SELECT TOP 5[State] ,sum([Total Sales]) As Total_Sales
       
