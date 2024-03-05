@@ -29,3 +29,10 @@ SELECT TOP 5[City] ,sum([Total Sales]) As Total_Sales
   FROM [Adidas sales Report].[dbo].['Working Sheet$']
   GROUP BY City
   ORDER BY Total_Sales DESC;
+  
+  /****** Whats are the Top 5 Products with the highest sales  ******/
+SELECT TOP 5[Product] ,sum([Total Sales]) As Total_Sales
+      
+  FROM [Adidas sales Report].[dbo].['Working Sheet$']
+  GROUP BY Product
+  ORDER BY Total_Sales DESC;
