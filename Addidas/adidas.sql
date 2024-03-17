@@ -41,3 +41,22 @@ SELECT TOP 5[Product] ,sum([Total Sales]) As Total_Sales
   FROM [Adidas sales Report].[dbo].['Working Sheet$']
   GROUP BY Product
   ORDER BY Total_Operating_Profits DESC;
+
+  --  Implement Subquery to get sales above the average sales --
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [Retailer]
+      ,[Retailer ID]
+      ,[Invoice Date]
+      ,[Region]
+      ,[State]
+      ,[City]
+      ,[Product]
+      ,[Price per Unit]
+      ,[Units Sold]
+      ,[Total Sales]
+      ,[Operating Profit]
+      ,[Operating Margin]
+      ,[Sales Method]
+  FROM [Adidas sales Report].[dbo].['Data Sales Adidas$']
+  WHERE [Total Sales] > ( SELECT  AVG([Total Sales])
+    FROM [Adidas sales Report].[dbo].['Data Sales Adidas$'])
